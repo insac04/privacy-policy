@@ -3,104 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>best before manager 개인정보 처리방침</title>
+    <title>개인정보 처리방침 - Best Before Manager</title>
     <style>
-        body {
-            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 0 20px;
-            background-color: #f9f9f9;
-        }
-        .container {
-            background-color: #fff;
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-        }
-        h1 {
-            border-bottom: 2px solid #2ecc71;
-            padding-bottom: 10px;
-            color: #2C3E50;
-            font-size: 24px;
-        }
-        h2 {
-            font-size: 18px;
-            margin-top: 25px;
-            color: #27ae60;
-        }
-        p, li {
-            font-size: 15px;
-            color: #555;
-        }
-        ul {
-            padding-left: 20px;
-        }
-        .highlight {
-            background-color: #effaf3;
-            padding: 15px;
-            border-left: 4px solid #2ecc71;
-            margin: 20px 0;
-            font-weight: bold;
-        }
-        footer {
-            margin-top: 30px;
-            font-size: 13px;
-            color: #888;
-            text-align: center;
-        }
+        body { font-family: 'Pretendard', sans-serif; line-height: 1.7; color: #333; max-width: 850px; margin: 0 auto; padding: 20px; background-color: #f4f7f6; }
+        .container { background: #fff; padding: 40px; border-radius: 16px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); }
+        h1 { border-bottom: 3px solid #10b981; padding-bottom: 15px; color: #065f46; font-size: 1.8rem; }
+        h2 { margin-top: 35px; color: #065f46; font-size: 1.3rem; border-left: 5px solid #10b981; padding-left: 15px; }
+        p, li { font-size: 1rem; color: #4b5563; margin-bottom: 10px; }
+        .highlight { background-color: #ecfdf5; border: 1px solid #10b981; padding: 20px; margin: 25px 0; border-radius: 12px; font-weight: 500; color: #065f46; line-height: 1.6; }
+        .important-box { background-color: #fff7ed; border: 1px solid #f97316; padding: 15px; border-radius: 10px; margin: 15px 0; }
+        .important-box strong { color: #ea580c; }
+        ul { padding-left: 20px; }
+        footer { margin-top: 50px; font-size: 0.9rem; color: #9ca3af; text-align: center; border-top: 1px solid #e5e7eb; padding-top: 20px; }
+        strong { color: #111827; }
     </style>
 </head>
 <body>
+    <div class="container">
+        <h1>개인정보 처리방침</h1>
+        <p><strong>BestBeforeManagerClassic</strong>(이하 '앱')는 이용자의 개인정보를 중요시하며, 관련 법령을 준수하기 위해 최선을 다하고 있습니다. 본 방침은 앱 내 데이터 처리 방식, 구글 드라이브 연동, 그리고 AI 서비스 이용에 관한 정보를 투명하게 제공합니다.</p>
 
-<div class="container">
-    <h1>개인정보 처리방침</h1>
-    <p><strong>best before manager</strong>(이하 '앱')는 이용자의 개인정보를 중요시하며, 관련 법령을 준수하기 위해 최선을 다하고 있습니다. 본 방침은 앱 내 데이터 처리 방식과 구글 드라이브 연동에 관한 투명한 정보를 제공합니다.</p>
+        <div class="highlight">
+            "BestBeforeManagerClassic는 별도의 외부 운영 서버 없이 사용자의 기기 내 로컬 데이터를 기반으로 작동하며, 개발자가 사용자의 데이터를 수집하거나 열람할 수 없는 구조를 원칙으로 합니다."
+        </div>
 
-    <div class="highlight">
-        "best before manager는 별도의 외부 서버를 운영하지 않는 로컬 기반 앱으로, 사용자의 데이터를 개발자가 수집하거나 열람할 수 없습니다."
+        <h2>1. 개인정보의 수집 및 이용 목적</h2>
+        <p>본 앱은 다음과 같은 목적으로만 최소한의 데이터 기능을 수행하며, 사용자의 동의 없이 개인정보를 수집하지 않습니다.</p>
+        <ul>
+            <li><strong>로컬 데이터 관리:</strong> 사용자가 입력한 유통기한 정보의 기기 내 저장 및 알림.</li>
+            <li><strong>사용자 주도 백업/복원:</strong> 사용자가 선택한 구글 드라이브(Google Drive) 계정으로의 데이터 전송 및 불러오기.</li>
+            <li><strong>스마트 등록(AI):</strong> AI 기술을 활용한 영수증 내 구매 내역(품목, 가격 등) 자동 추출 및 등록 지원.</li>
+        </ul>
+
+        <h2>2. 처리하는 데이터 및 보안 항목</h2>
+        <ul>
+            <li><strong>앱 데이터:</strong> 항목명, 만료일 등. 오직 사용자의 기기 내부 또는 사용자의 구글 드라이브에만 존재합니다.</li>
+            <li><strong>AI API 키:</strong> 사용자가 직접 등록한 서비스 키는 <strong>외부로 전송되지 않으며</strong>, 기기 내 <strong>보안 저장소(Secure Storage)</strong>에만 암호화되어 보관됩니다.</li>
+            <li><strong>인증 정보:</strong> 구글 드라이브 연동을 위한 토큰 정보는 구글 보안 가이드라인에 따라 처리되며 개발자에게 공유되지 않습니다.</li>
+        </ul>
+
+        <h2>3. 스마트 등록(AI) 기능 이용 시 데이터 처리</h2>
+        <p>영수증 이미지를 활용한 '스마트 등록' 기능 이용 시, 정보 추출을 위해 외부 AI 서비스(Google Gemini API 등)와의 통신이 발생합니다.</p>
+        <div class="important-box">
+            <strong>⚠️ 데이터 전송 및 처리 안내:</strong> 
+            영수증 이미지는 <strong>표준 보안 프로토콜(HTTPS)로 암호화</strong>되어 외부 AI 엔진으로 전송됩니다. 전송된 이미지 정보의 보관, 활용 및 파기 등 <strong>데이터 처리에 관한 구체적인 사항은 해당 AI 서비스 제공자의 약관 및 정책</strong>을 따릅니다.
+        </div>
+        <ul>
+            <li>개인정보 보호를 위해 카드번호, 주소 등 민감한 정보는 <strong>이미지 자르기(Crop) 기능을 통해 제외하고 구매 내역 위주로</strong> 업로드하시기를 권장합니다.</li>
+            <li>정보 노출이 우려될 경우 언제든지 분석 작업을 취소하고 직접 입력 기능을 사용할 수 있습니다.</li>
+        </ul>
+
+        <h2>4. 데이터의 제3자 제공 및 위탁</h2>
+        <p>본 앱은 이용자의 데이터를 외부 서버로 무단 전송하거나 제3자에게 제공하지 않습니다. 구글 드라이브 및 AI 분석 기능은 사용자가 서비스 제공을 위해 특정 외부 도구를 활용하는 행위이며, 개발자는 해당 과정에서 발생하는 데이터에 접근할 수 있는 기술적 수단을 보유하고 있지 않습니다.</p>
+
+        <h2>5. 데이터의 파기</h2>
+        <ul>
+            <li><strong>기기 내 데이터:</strong> 앱 삭제 시 기기에 저장된 모든 데이터(설정된 API 키 포함)는 즉시 삭제됩니다.</li>
+            <li><strong>백업 및 AI 데이터:</strong> 구글 드라이브 데이터는 사용자가 직접 관리하며, AI 분석을 위해 전송된 데이터는 해당 서비스 제공자의 정책에 따라 파기됩니다.</li>
+        </ul>
+
+        <h2>6. 문의처</h2>
+        <p>개인정보 처리와 관련하여 문의사항이 있으시면 아래의 메일로 연락해주시기 바랍니다.</p>
+        <p>이메일: <strong>insac04@gmail.com</strong></p>
+
+        <footer>
+            <p>시행 일자: 2026년 02월 06일</p>
+        </footer>
     </div>
-
-    <h2>1. 개인정보의 수집 및 이용 목적</h2>
-    <p>본 앱은 다음과 같은 목적으로만 최소한의 데이터 기능을 수행하며, 사용자의 동의 없이 데이터를 수집하지 않습니다.</p>
-    <ul>
-        <li><strong>로컬 데이터 관리:</strong> 사용자가 입력한 유통기한 정보의 기기 내 저장 및 알림.</li>
-        <li><strong>사용자 주도 백업/복원:</strong> 사용자가 직접 선택한 구글 드라이브(Google Drive) 계정으로의 데이터 전송 및 불러오기.</li>
-    </ul>
-
-    <h2>2. 처리하는 개인정보 및 데이터 항목</h2>
-    <p>본 앱은 회원가입 절차가 없으며 개인을 식별할 수 있는 정보를 요구하거나 수집하지 않습니다.</p>
-    <ul>
-        <li><strong>앱 데이터:</strong> 사용자가 등록한 물품명, 유통기한 날짜 등. 이 데이터는 오직 사용자의 기기 내부 또는 사용자가 직접 선택한 구글 드라이브 보관함에만 존재합니다.</li>
-        <li><strong>구글 계정 정보:</strong> 구글 드라이브 백업 기능을 위해 구글 API가 사용하는 인증 정보입니다. 이 정보는 앱 내부나 개발자에게 공유되지 않으며 구글의 보안 가이드라인에 따라 처리됩니다.</li>
-    </ul>
-
-    <h2>3. 데이터의 제3자 제공 및 위탁</h2>
-    <p>본 앱은 이용자의 데이터를 외부 서버로 무단 전송하거나 제3자에게 제공하지 않습니다.</p>
-    <ul>
-        <li>구글 드라이브 백업 기능은 사용자가 '도구'로서 본 앱을 활용해 본인의 저장소에 데이터를 업로드하는 행위입니다.</li>
-        <li>개발자는 사용자의 백업 파일이나 구글 계정에 접근할 수 있는 기술적 수단을 보유하고 있지 않습니다.</li>
-    </ul>
-
-    <h2>4. 개인정보의 파기</h2>
-    <ul>
-        <li><strong>기기 내 데이터:</strong> 앱 삭제 시 기기에 저장된 모든 앱 데이터는 즉시 삭제됩니다.</li>
-        <li><strong>백업 데이터:</strong> 사용자의 구글 드라이브에 저장된 백업 데이터는 사용자가 직접 관리 및 삭제할 수 있습니다.</li>
-    </ul>
-
-    <h2>5. 이용자의 권리 행사</h2>
-    <p>사용자는 언제든지 앱 삭제 또는 구글 계정 설정을 통해 앱의 접근 권한을 철회함으로써 데이터 처리를 중단할 수 있습니다.</p>
-
-    <h2>6. 문의처</h2>
-    <p>개인정보 처리와 관련하여 문의사항이 있으시면 아래의 메일로 연락해주시기 바랍니다.</p>
-    <p>이메일: <strong>[개발자님의 이메일 주소 입력]</strong></p>
-
-    <footer>
-        <p>시행 일자: 2026년 01월 28일</p>
-    </footer>
-</div>
-
 </body>
 </html>
